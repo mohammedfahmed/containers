@@ -15,3 +15,11 @@
 **VOLUME:** volumes are a way for containers to store persistent data.
 
 **ENTRYPOINT:** it is the process that is started when the container is run.
+
+
+COPY
+LABEL
+STOPSIGNAL
+USER
+VOLUME
+ONBUILD
