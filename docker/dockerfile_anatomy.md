@@ -12,7 +12,7 @@
 
 **CMD:** It runs at the ***run time***, there can only be one CMD instruction in a Dockerfile to provide defaults for an executing container. These defaults can include an executable, or they can omit the executable, in which case you must specify an **ENTRYPOINT** instruction as well. 
 
-**ENTRYPOINT:** it is the process that is started when the container is run.  `ENTRYPOINT ["<executable>", "<param1>", "<param2>"]`
+**ENTRYPOINT:** it is the process that is started when the container is run.  
 
 
 # ADD vs COPY
