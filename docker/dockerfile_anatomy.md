@@ -33,7 +33,7 @@ ONBUILD
 
 - The `RUN` command always gets executed in a new layer. It allows you to install packages and applications on top of an existing image layer and creates a new layer on top of it.
 -  `CMD` used to set a default command. This will be executed if you run a particular container without specifying some command. In case you specify a command while running a docker container, the default one will be ignored. Note that if you specify more than one `CMD` instruction in your dockerfile, only the last one will be executed. Also, it could be used to set some additional default parameters that will be inserted after the default parameters when you are using an `ENTRYPOINT` in executable form and if you run the container without specifying any arguments in the command line.
-- `ENTRYPOINT` is similar to a CMD command. However, it does not ignore the parameters when you run a container with CLI parameters. 
+- `ENTRYPOINT` is similar to a `CMD` command. However, it does not ignore the parameters when you run a container with CLI parameters. 
 
 If you want to specify default arguments and want it to be overwritten on specifying CLI arguments, use `CMD` commands. And if you want to run a container with the condition that a particular command is always executed, use `ENTRYPOINT`. `RUN` is simply used to build additional image layers over the base image.
 
