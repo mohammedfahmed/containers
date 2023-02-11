@@ -28,3 +28,19 @@ USER
 VOLUME
 
 ONBUILD
+
+# RUN vs CMD vs Entrypoint in Docker
+
+## Executable form
+```shell
+RUN [“apt-get”, “install”, “vim”]
+ENTRYPOINT [“/bin/echo”, “TutorialsPoint”]
+CMD [“/bin/echo”, “TutorialsPoint”]
+```
+
+## Shell form
+```shell
+RUN apt-get -y update
+CMD echo “TutorialsPoint”
+ENTRYPOINT echo “TutorialsPoint”
+```
