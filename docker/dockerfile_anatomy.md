@@ -38,6 +38,8 @@ ONBUILD
 If you want to specify default arguments and want it to be overwritten on specifying CLI arguments, use `CMD` commands. And if you want to run a container with the condition that a particular command is always executed, use `ENTRYPOINT`. `RUN` is simply used to build additional image layers over the base image.
 
 
+# Executable form vs Shell form
+
 ## Executable form
 ```shell
 RUN ["apt-get", "install", "vim"]
@@ -51,3 +53,8 @@ RUN apt-get -y update
 CMD echo "TutorialsPoint"
 ENTRYPOINT echo "TutorialsPoint"
 ```
+
+
+- When the Shell Format is used, the bottom layer of the shell format will call `/bin/sh -c <command>`. When you run commands in Shell format, the environment variable that defined in `ENV` command will be inherited.
+- When the Exec Format is used, `<command>` will be called directly and will not be parsed by the shell. The environment variable that defined in `ENV` will not be passed as well.
+- The shell format of `ENTRYPOINT` ignores any arguments provided by `CMD` or docker run
