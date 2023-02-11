@@ -2,7 +2,7 @@
 
 **ADD:** Copies the files from a source destination inside the container at ***build time***.
 
-**RUN:** Runs a command at ***build time***.  `RUN ["<executable>", "<param1>", "<param2>"]`
+**RUN:** Runs a command at ***build time*** using a base image that does not contain the specified shell executable. This form `RUN ["<executable>", "<param1>", "<param2>"]` makes it possible to avoid shell string munging
 
 **CMD:** like the run directive, but CMD doesn’t run at build time. Instead it runs at run time, when the container is created.
 
