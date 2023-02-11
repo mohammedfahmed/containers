@@ -31,6 +31,8 @@ ONBUILD
 
 # RUN vs CMD vs Entrypoint in Docker
 
+- The RUN command always gets executed in a new layer. It allows you to install packages and applications on top of an existing image layer and creates a new layer on top of it.
+
 ## Executable form
 ```shell
 RUN ["apt-get", "install", "vim"]
