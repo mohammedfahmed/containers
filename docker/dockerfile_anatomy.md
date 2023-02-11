@@ -2,7 +2,7 @@
 
 **ADD:** Copies the files from a source destination inside the container at ***build time***.
 
-**RUN:** Runs a command at ***build time***.  'RUN ["<executable>", "<param1>", "<param2>"]'
+**RUN:** Runs a command at ***build time***.  `RUN ["<executable>", "<param1>", "<param2>"]`
 
 **CMD:** like the run directive, but CMD doesn’t run at build time. Instead it runs at run time, when the container is created.
 
