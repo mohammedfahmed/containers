@@ -32,7 +32,7 @@ ONBUILD
 
 # ADD vs COPY
 
-`COPY` only supports the basic copying of local files into the container, while `ADD` has some features (like local-only tar extraction and remote URL support) that are not immediately obvious
+`COPY` only supports the basic copying of local files into the container, while `ADD` has two extra features (local-only tar extraction and remote URL support). 
 
 # RUN vs CMD vs Entrypoint
 
