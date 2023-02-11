@@ -33,14 +33,14 @@ ONBUILD
 
 ## Executable form
 ```shell
-RUN [“apt-get”, “install”, “vim”]
-ENTRYPOINT [“/bin/echo”, “TutorialsPoint”]
-CMD [“/bin/echo”, “TutorialsPoint”]
+RUN ["apt-get", "install", "vim"]
+ENTRYPOINT ["/bin/echo", "TutorialsPoint"]
+CMD ["/bin/echo", "TutorialsPoint"]
 ```
 
 ## Shell form
 ```shell
 RUN apt-get -y update
-CMD echo “TutorialsPoint”
-ENTRYPOINT echo “TutorialsPoint”
+CMD echo "TutorialsPoint"
+ENTRYPOINT echo "TutorialsPoint"
 ```
