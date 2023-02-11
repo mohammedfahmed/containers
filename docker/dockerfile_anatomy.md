@@ -29,6 +29,11 @@ VOLUME
 
 ONBUILD
 
+
+# ADD vs COPY
+
+`COPY` only supports the basic copying of local files into the container, while `ADD` has some features (like local-only tar extraction and remote URL support) that are not immediately obvious
+
 # RUN vs CMD vs Entrypoint
 
 - The `RUN` command always gets executed in a new layer. It allows you to install packages and applications on top of an existing image layer and creates a new layer on top of it.
